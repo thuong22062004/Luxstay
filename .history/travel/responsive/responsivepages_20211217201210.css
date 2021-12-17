@@ -64,7 +64,6 @@
 }
 .logo__svg--mobile{
     width: 100%;
-    fill: white;
 }
 .header__menu-item-mobile{
     list-style: none;
@@ -292,7 +291,6 @@ i.language__item-active{
 }
 .logo__svg--mobile{
     width: 100%;
-    fill: white;
 }
 .header__menu-item-mobile{
     list-style: none;
