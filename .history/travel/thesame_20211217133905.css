@@ -195,8 +195,8 @@ html{
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #232526;  /* fallback for old browsers */
-  border-radius: 4px;
+    background-color:var(--background-comon);
+  border-radius: 3px;
 }
 /* Handle on hover */
 /* ::-webkit-scrollbar-thumb: hover{

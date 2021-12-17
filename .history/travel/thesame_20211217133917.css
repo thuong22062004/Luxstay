@@ -191,12 +191,12 @@ html{
 ::-webkit-scrollbar-track {
   /* box-shadow: inset 0 0 5px grey;  */
   /* border-radius: 10px; */
-  background-color:var(--background-comon);
+  /* background-color:var(--background-comon); */
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #232526;  /* fallback for old browsers */
-  border-radius: 4px;
+    background-color:var(--background-comon);
+  border-radius: 3px;
 }
 /* Handle on hover */
 /* ::-webkit-scrollbar-thumb: hover{
