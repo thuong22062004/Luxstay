@@ -1,0 +1,207 @@
+.header__contain-sign{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__svg-sign{
+    height: 52px;
+    margin: 10px 16px 10px 0px;
+    fill: white;
+}
+.header__logo-home{
+    text-decoration: none;
+    display:block;
+}
+.header__logo-home:hover .logo__svg-sign{ 
+fill: var(--text-hover);
+}
+.heaed__body-sign{
+    height: 170px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.content__sign{
+    color: var(--text-white);
+    line-height: 4.25rem;
+   
+}
+.content__sign-heading{
+    font-size:2.5rem;
+    font-weight: 7s00;
+    user-select: none;
+    cursor: default;
+    /* text-shadow: 0px 0px 6px rgba(255,255,255,0.7) */
+}
+.content__sign-describe{
+    font-size:1.8rem;
+    font-weight: 500;
+    color: #cfc547;
+}
+
+.container{
+margin-top: 80px;
+}
+.sign__services-contain:last-child{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.sign__services-contain{
+    width:50%;
+}
+.sign__service-img{
+    height: 80px;
+    margin: 40px 0 10px 0;
+}
+.container__body-sign{
+    background:var(--background-comon);   
+    /* height: 1000px; */
+}
+.container__body-sign-services{
+    width: 68%;
+}
+.container__services-list{
+    display: flex;
+ /* padding-top: 20px; */
+}
+.sign__service-describe{
+    color: var(--text-white);
+}
+.sign__service-heading{
+    font-size: 1.8rem;
+    margin: 20px 0;
+    font-weight: 700;
+}
+.sign__service-moredescribe{
+    font-size:1.4rem;
+    line-height: 2.5rem;
+    opacity: 0.6;
+}
+.container__forms-sign{
+    width:32%; 
+    background:var(--background-comon);
+    position: relative;
+    top: -110px;
+    border-radius: 10px;
+    box-shadow: 0 5px 40px rgba(240, 46, 170, 0.7);
+}
+.form__contain-total-sign{
+     padding: 40px 40px 30px;
+     color:var(--text-white);
+}
+.form__login-resgister{
+    font-size:2rem;
+    font-weight:800;
+}
+.form__login-register-desc{
+    font-size:1.4rem;
+    margin:40px 0px 40px;
+    color:var(--text-color);
+}
+.form__input-sign-item{
+    margin: 10px 0px 0px;
+}
+.btn.form__input-sign-item{
+    min-height: 49px;
+    min-width: 359px;
+    background:var(--background-comon);
+    border-radius: 40px;
+    margin-top: 40px;
+}
+.form__input-sign-kid{
+    padding: 5px 10px;
+    width: 90%;
+    height: 100%;
+    background:var(--background-comon);
+    border:none;
+    outline: none;
+    color:white;
+    margin-left: 10px;
+}
+.form__input-icon{
+    font-size: 1.6rem;
+    line-height:49px;
+    margin:0px 25px 0px 10px;
+}
+.btn.form__submit-sign{
+    min-height: 57px;
+    min-width: 359px;
+    border:none;
+    margin-top:42px;
+    background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 0 15px 50px rgba(148, 10, 79, 0.7);
+}
+.btn.form__submit-sign:hover{
+    background: #cc2b5e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #753a88, #cc2b76); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.form__help-sign{
+    width: 100%;
+    text-align: center;
+}
+.form_help-sign-content{
+    display: block;
+    color: var(--text-white);
+    font-size: 1.45rem;
+    padding-top: 35px;
+}
+.form__help-sign-link{
+    text-decoration: none;
+    color:var(--text-pink);
+    font-weight: 700;
+}
+.form__help-sign-link:hover{
+    color: var(--text-hover);
+}
+.form__help-moreoption{
+    font-size:1.6rem;
+    padding: 50px 0px 30px;
+}
+.btn.connection-contain-social{
+    min-height: 53px;
+    min-width: 359px;
+    position: relative;
+    background: var(--background-comon);
+}
+.connection-contain-social::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background: #cc2b5e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #753a88, #cc2b76); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: none;    
+    border-radius: 40px;
+    animation : FadeIn ease-in 0.4s;
+    border: 1px  solid #e6eff3;
+}
+.connection-contain-social:hover::before{
+display: block;
+}
+.connection-link-social{
+    text-decoration: none;
+    color:var(--text-color);
+    padding-top: 20px;
+    display: block;
+}
+.connection-social-content{
+    font-size: 1.4rem;
+    position:absolute;
+}
+.connection-social-icon{
+    font-size: 1.5rem;
+    color:#0f92f3;
+    position:absolute;
+    left:87%;
+}
+.connection-social-svg{
+    width: 15px;
+    height:15px;
+}

@@ -1,0 +1,209 @@
+:root{
+    --background-comon:#131516;
+    --text-color : #d3cfc9;
+    --text-hover :rgba(23, 241, 241, 0.7) ;
+    --text-child :#131516;
+    --text-title :#f3f3f3;
+    --text-white :white;
+    --outstanding-color:#181a1b;
+    --text-pink:#ee0979;
+    --text-small:#9d9d9d;
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+} 
+html{
+    font-size: 65%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.fl{
+    display: flex;
+}
+.color-represent{
+    color:var(--text-hover)
+}
+.mg-left-20{
+    margin-left: 20%;
+}
+/*resposive*/
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -9px; /*quy tắc 12column grid*/
+    margin-right: -9px; /*quy tắc 12column grid*/
+}
+.grid__column-5{
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 20%;
+}
+/*nút*/
+.btn{
+    min-height: 30px;
+    line-height: 30px;
+    min-width: 56px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+} 
+.btn.btn-comon{
+    background: #555555;
+    min-height: 41px;
+}
+.btncircle{
+    border-radius: 40px;
+    border: 1px  solid #373c3e;
+}
+/*amination*/
+@keyframes FadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+ /*                       footer                                  */
+.footer__contian{
+    background:#181a1b;
+    border-top: 0.25px solid wheat;
+}
+.footer__body-content{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.footer_content-text{
+       font-size: 1.4rem;
+    color: var(--text-color);
+    line-height:2.5rem;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+/* / text common */
+.text-mutual{
+    font-size:2.5rem;
+    letter-spacing: 2px;
+    color:var(--text-title);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.text__chil-common{
+    font-size:1.8rem;
+    color:var(--text-small);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.text__link-log{
+    color:var(--text-color)
+}
+.contain__fullofText{
+    margin-top: 60px;
+}
+.l-2{
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.l-9{
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+@media screen and (min-width:1113px) {
+    .row{
+       margin-left: -4px;
+       margin-right: -4px;
+    }
+    .col{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .l-2-minwidth{
+        display:block;
+    }
+    .l-2-minwidth{
+        flex: 0 0 16.66667%;
+        min-width: 20%;
+    }
+}
+
+ /* SLiCK slider */
+ .slick-slider
+ {
+     position: relative;
+ 
+     display: block;
+     box-sizing: border-box;
+ 
+     -webkit-user-select:text;
+        -moz-user-select:text;
+         -ms-user-select:text;
+             user-select:text;
+ 
+     -webkit-touch-callout: none;
+     -khtml-user-select: none;
+     -ms-touch-action: pan-y;
+         touch-action: pan-y;
+     -webkit-tap-highlight-color: transparent;
+ }
+ /* .slick-slider { display: table; table-layout: fixed; width: 100%; } */
+ .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    background:#000000;
+    color:white;
+    border: none;
+    z-index: 4;
+    padding: 15px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.slick-arrow:hover{
+     color:aqua;
+     border:1px solid  var(--text-white);
+     cursor: pointer;
+}
+.slick-prev{
+    left:-20px;
+}
+.slick-next{
+    right: -20px ;
+}
+                      /* scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  /* border-radius: 10px; */
+  background-color:var(--outstanding-color);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    /* display:block; */
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

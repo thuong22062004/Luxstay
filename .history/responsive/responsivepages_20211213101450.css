@@ -1,0 +1,22 @@
+/* Dành cho máy tính bảng */
+@media all and (min-width:748px) and (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+.header__nav{
+    display: none;
+    position: fixed;
+}
+.menu-mobile{
+    display:block;
+}
+.menu-mobile i {
+    font-size: 3rem;
+    color: var(--text-white);
+}
+}
+/* Dành cho điện thoại */
+@media all and (max-width: 740px) {
+
+
+}

@@ -1,0 +1,450 @@
+/* Dành cho máy tính bảng */
+@media all and (min-width:740px) and (max-width: 1023px) {
+    body{
+        overflow-x: hidden;
+    }
+    .grid{
+        width: 720px;
+    }
+.header__contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+}
+.modal{
+    display:none;
+    animation: FadeIn ease 0.5s;
+}
+.menu-mobile{
+    transform:translateX(-308px);
+     transition: all ease 0.5s;
+     opacity: 0; 
+    width:40%;
+}
+.menu-mobile{
+    display:block;
+}
+.menu__appear-mobile:checked ~ .menu-mobile{
+    transform:translateX(0px);
+    opacity: 1;
+}
+.menu__appear-mobile:checked ~ .modal{
+    display:block;
+}
+.header__nav{
+    display: none;
+}
+.menu-mobile-btn{
+    display:block;
+}
+.menu-mobile-btn i {
+    font-size: 3rem;
+    color: var(--text-white);
+}
+.header__menu{
+    display:block;
+}
+.header__nav-mobile{
+    background: var( --outstanding-color);
+    color:white;
+    height: 100vh;
+    position: relative;
+    padding: 20px 10px;
+}
+.close__btn-mobile i{
+    font-size:2.5rem;
+    position:absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+.header__logo-mobile{
+    width: 150px;
+    margin: 20px 10px;
+}
+.logo__svg--mobile{
+    width: 100%;
+}
+.header__menu-item-mobile{
+    list-style: none;
+    padding: 15px 18px;
+    position: relative;
+}
+.header__menu-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* display: block; */
+    padding: 3px 5px 3px 0 ;
+}
+.header__menu-mobile-img{
+    border-radius: 10px;
+    background: #212325;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.header__language{
+    display:block;
+}
+i.language__item-active{
+    font-size: 10px;
+    /* padding: 0 10px; */
+    /* color: #222; */
+    color: blanchedalmond;
+    display: none;
+}
+.header__language-container-mobile{
+    position: absolute;
+    top: 100%;
+    background:var(--outstanding-color);
+    transform:translateY(40px);
+    visibility: hidden;
+    box-shadow: 1px 2px 5px var(--text-white);
+    cursor: pointer;
+    animation: FadeIn ease 0.5s;
+    transition: transform linear 0.25s;
+    z-index: 1;
+}
+.header__language-container-mobile::before{
+    content: "";
+    width: 100%;
+    height: 15px;
+    background:transparent;
+    position:absolute;
+    top: -14px;
+}
+.language__appear-mobile:checked ~ .header__language-container-mobile{
+    transform:translateY(0px);
+    visibility: visible;
+}
+.slider__back,
+.slider__next{
+    display:none; 
+}
+.list__dots,.item-dot{
+    display:none;
+}
+.slider{
+    width:700px;
+}
+.contain-img{
+    width: 720px;
+    height :150px;
+}
+.img-child{
+    width: 720px;
+    height:150px;
+}
+.text-mutual{
+    font-size:1.9rem;
+    font-weight: 800;
+}
+.text__chil-common{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.slick-arrow{
+    padding: 15px;
+    font-size: 1.5rem;
+}
+.slick-prev{
+    left:-5px;
+}
+.slick-next{
+    right: -5px ;
+}
+.text__site-number{
+    transform:translateY(0px);
+    border-radius: unset;
+    opacity: 0.6;
+}
+.img__promotion-item{
+    height: 150px;
+    border-radius: 10px;
+}
+.slick__arrow-sales{
+    opacity: 0.5;
+    font-size: 1.5rem;
+}
+.find__booking-contact{
+    margin-bottom: 40px;
+}
+.sponsor-include-contain {
+    margin-top: 20px;
+}
+.m-6{
+    flex: 0 0 50%;
+    max-width: 50%;;
+}
+.m-4{
+    flex: 0 0 33.33333%;
+    max-width:  33.33333%;
+}
+.mg-left-20{
+    margin-left: 0;
+}
+.contain__social{
+    margin-left: 40px;
+}
+.header__nav-sign{
+    display: none;
+}
+.container__body-sign-services{
+    display: none;
+}
+.header__contain-sign{
+    justify-content: space-evenly;
+}
+.form__contain-total-sign{
+    width: 100%;
+}
+.container__forms-sign{
+    width:90%; 
+    top: -30px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow:unset;
+}
+.btn.form__submit-sign{
+    width: 100%;
+}
+.form__input-icon{
+    font-size: 1.9rem;
+}
+}
+/* Dành cho điện thoại */
+@media (max-width: 740px) {
+    body{
+        overflow-x: hidden;
+    }
+    .grid{
+        width: 340px;
+    }
+.header__day-guest{
+    display: none;
+}
+.header_search{
+    width: 200px;
+}
+.history__search{
+    display: none;
+}
+.header__contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+}
+.text__chil-common{
+    margin-bottom: 10px;
+}
+.modal{
+    display:none;
+    animation: FadeIn ease 0.5s;
+}
+.menu-mobile{
+    transform:translateX(-308px);
+     transition: all ease 0.5s;
+     opacity: 0; 
+    width:80%;
+}
+.menu-mobile{
+    display:block;
+}
+.menu__appear-mobile:checked ~ .menu-mobile{
+    transform:translateX(0px);
+    opacity: 1;
+}
+.menu__appear-mobile:checked ~ .modal{
+    display:block;
+}
+.header__nav{
+    display: none;
+}
+.menu-mobile-btn{
+    display:block;
+}
+.menu-mobile-btn i {
+    font-size: 3rem;
+    color: var(--text-white);
+}
+.header__menu{
+    display:block;
+}
+.header__nav-mobile{
+    background: var( --outstanding-color);
+    color:white;
+    height: 100vh;
+    position: relative;
+    padding: 20px 10px;
+}
+.close__btn-mobile i{
+    font-size:2.5rem;
+    position:absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+.header__logo-mobile{
+    width: 150px;
+    margin: 20px 10px;
+}
+.logo__svg--mobile{
+    width: 100%;
+}
+.header__menu-item-mobile{
+    list-style: none;
+    padding: 15px 18px;
+    position: relative;
+}
+.header__menu-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* display: block; */
+    padding: 3px 5px 3px 0 ;
+}
+.header__menu-mobile-img{
+    border-radius: 10px;
+    background: #212325;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.header__language{
+    display:block;
+}
+i.language__item-active{
+    font-size: 10px;
+    /* padding: 0 10px; */
+    /* color: #222; */
+    color: blanchedalmond;
+    display: none;
+}
+.header__language-container-mobile{
+    position: absolute;
+    top: 100%;
+    background:var(--outstanding-color);
+    transform:translateY(40px);
+    visibility: hidden;
+    box-shadow: 1px 2px 5px var(--text-white);
+    cursor: pointer;
+    animation: FadeIn ease 0.5s;
+    transition: transform linear 0.25s;
+    z-index: 1;
+}
+.header__language-container-mobile::before{
+    content: "";
+    width: 100%;
+    height: 15px;
+    background:transparent;
+    position:absolute;
+    top: -14px;
+}
+.language__appear-mobile:checked ~ .header__language-container-mobile{
+    transform:translateY(0px);
+    visibility: visible;
+}
+.slider__back,
+.slider__next{
+    display:none; 
+}
+.list__dots,.item-dot{
+    display:none;
+}
+.slider{
+    width:340px;
+    border-radius: 20px;
+}
+.contain-img{
+    width: 340px;
+    height :90px;
+}
+.img-child{
+    width: 340px;
+    height:90px;
+}
+.text-mutual{
+    font-size:1.7rem;
+    font-weight: 800;
+}
+.text__chil-common{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.slick-arrow{
+    padding: 15px;
+    font-size: 1.5rem;
+}
+.slick-prev{
+    left:-5px;
+}
+.slick-next{
+    right: -5px ;
+}
+.text__site-number{
+    transform:translateY(0px);
+    border-radius: unset;
+    opacity: 0.6;
+}
+.img__promotion-item{
+    height: 150px;
+    border-radius: 10px;
+}
+.slick__arrow-sales{
+    opacity: 0.5;
+    font-size: 1.5rem;
+}
+.find__booking-contact{
+    margin-bottom: 40px;
+}
+.sponsor-include-contain {
+    margin-top: 20px;
+}
+.m-6{
+    flex: 0 0 50%;
+    max-width: 50%;;
+}
+.m-4{
+    flex: 0 0 33.33333%;
+    max-width:  33.33333%;
+}
+.mg-left-20{
+    margin-left: 0;
+}
+.contain__social{
+    margin-left: 40px;
+}
+.header__nav-sign{
+    display: none;
+}
+.container__body-sign-services{
+    display: none;
+}
+.header__contain-sign{
+    justify-content: space-evenly;
+}
+.form__contain-total-sign{
+    width: 100%;
+}
+.container__forms-sign{
+    width:90%; 
+    top: -30px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow:unset;
+}
+.btn.form__submit-sign{
+    width: 100%;
+}
+.form__input-icon{
+    font-size: 1.9rem;
+}
+
+}

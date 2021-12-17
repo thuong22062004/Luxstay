@@ -1,0 +1,78 @@
+/* Dành cho máy tính bảng */
+@media all and (min-width:748px) and (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+.header__contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+}
+.modal{
+    display:block;
+}
+.header__nav{
+    display: none;
+}
+.menu-mobile{
+    display:block;
+}
+.menu-mobile i {
+    font-size: 3rem;
+    color: var(--text-white);
+}
+.header__menu{
+    display:block;
+}
+.header__nav-mobile{
+    background: var( --outstanding-color);
+    color:white;
+    width:40%;
+    height: 100vh;
+    position: relative;
+    padding: 20px 10px;
+}
+.close__btn-mobile i{
+    font-size: 3rem;
+    position:absolute;
+    top: 20px;
+    right: 10px;
+}
+.header__logo-mobile{
+    width: 150px;
+    margin: 20px 10px;
+}
+.logo__svg--mobile{
+    width: 100%;
+}
+.header__menu-item-mobile{
+    list-style: none;
+    padding: 15px 18px;
+    position: relative;
+}
+.header__menu-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* display: block; */
+    padding: 3px 5px 3px 0 ;
+}
+.header__menu-mobile-img{
+    border-radius: 10px;
+    background: #212325;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.header__language{
+
+}
+}
+/* Dành cho điện thoại */
+@media all and (max-width: 740px) {
+
+
+}

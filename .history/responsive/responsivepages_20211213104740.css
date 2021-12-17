@@ -1,0 +1,44 @@
+/* Dành cho máy tính bảng */
+@media all and (min-width:748px) and (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+.header__contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+}
+.modal{
+    display:block;
+}
+.header__nav{
+    display: none;
+}
+.menu-mobile{
+    display:block;
+}
+.menu-mobile i {
+    font-size: 3rem;
+    color: var(--text-white);
+}
+.header__menu{
+    display:block;
+}
+.header__nav-mobile{
+    background-color: whitesmoke;
+    width:40%;
+    height: 100vh;
+    position: relative;
+}
+.close__btn-mobile i{
+    font-size: 1.5rem;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+}
+/* Dành cho điện thoại */
+@media all and (max-width: 740px) {
+
+
+}
