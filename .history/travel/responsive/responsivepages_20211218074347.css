@@ -345,6 +345,7 @@ i.language__item-active{
     animation: FadeIn ease 0.5s;
     transition: transform linear 0.25s;
     z-index: 1;
+    width: 100%;
 }
 .header__language-container-mobile::before{
     content: "";

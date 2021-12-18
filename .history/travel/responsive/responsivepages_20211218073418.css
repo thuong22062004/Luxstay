@@ -288,12 +288,6 @@ i.language__item-active{
     right: 20px;
     cursor: pointer;
 }
-.crash__item-use {
-    padding: 10px 36px 10px 10px;
-}
-.language__item-use{
-    padding: 10px 87px 10px 10px;
-}
 .header__logo-mobile{
     width: 150px;
     margin: 20px 10px;

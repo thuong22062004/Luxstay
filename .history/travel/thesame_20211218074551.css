@@ -22,6 +22,9 @@ html{
     overflow: hidden;
     overflow-y: auto;
 }
+.header__menu-item-mobile.ps-relative{
+    position: relative;
+}
 .fl{
     display: flex;
 }

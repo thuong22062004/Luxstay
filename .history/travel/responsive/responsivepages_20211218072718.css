@@ -1,5 +1,8 @@
 /* Dành cho máy tính bảng */
 @media all and (min-width:740px) and (max-width: 1024px) {
+    html{
+        overflow: hidden;
+    }
     body{
         overflow: hidden;
     }
@@ -50,7 +53,7 @@
     height: 100vh;
     position: relative;
     padding: 20px 10px;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .close__btn-mobile i{
     font-size:2.5rem;
@@ -102,6 +105,7 @@ i.language__item-active{
 .header__language-container-mobile{
     position: absolute;
     top: 100%;
+    /* bottom: 40%; */
     background:var(--outstanding-color);
     transform:translateY(40px);
     visibility: hidden;
@@ -110,6 +114,7 @@ i.language__item-active{
     animation: FadeIn ease 0.5s;
     transition: transform linear 0.25s;
     z-index: 1;
+    /* margin-bottom: 20px; */
 }
 .header__language-container-mobile::before{
     content: "";
@@ -279,7 +284,6 @@ i.language__item-active{
     height: 100vh;
     position: relative;
     padding: 20px 10px;
-    overflow-y: auto;
 }
 .close__btn-mobile i{
     font-size:2.5rem;
@@ -287,12 +291,6 @@ i.language__item-active{
     top: 40px;
     right: 20px;
     cursor: pointer;
-}
-.crash__item-use {
-    padding: 10px 36px 10px 10px;
-}
-.language__item-use{
-    padding: 10px 87px 10px 10px;
 }
 .header__logo-mobile{
     width: 150px;

@@ -1,23 +1,24 @@
 $(document).ready(function(){
-    $('.payment-slick').slick({
-        slidesToShow: 5,
+    $('.refer__site-click').slick({
+        slidesToShow: 4,
         slidesToScroll: 1,
-        infinite: true,
-        arrows: false,
+        infinite: false,
+        arrows: true,
         draggable:true,
-        // autoplay: true,
+        autoplay: false,
         // autoplaySpeed: 2000,
-        prevArrow:"<button type='button' class='slick-prev pull-left slick-arrow'><i class='ti-angle-left'></i></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right slick-arrow'><i class='ti-angle-right'></i></button>",
+        prevArrow:"<button type='button' class='slick-prev pull-left slick__arrow-refer'><i class='ti-angle-left'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right slick__arrow-refer'><i class='ti-angle-right'></i></button>",
         responsive: [
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 infinite: false,
                 dots: false,
-                arrows: true,
+                arrows: false,
+        infinite: false,
               }
             },
             {
@@ -25,7 +26,7 @@ $(document).ready(function(){
                 settings: {
                   slidesToShow: 1.3,
                   // slidesToScroll: 1,
-                  infinite: false,
+                infinite: false,
                   dots: false,
                   arrows:false
                 }
